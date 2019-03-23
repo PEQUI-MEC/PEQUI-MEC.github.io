@@ -11,7 +11,7 @@ class App extends Component {
             <FaExclamationTriangle style={{color:'yellow', fontSize:60}}/>
           </p>
           <p>
-            Site fora do ar! Volte em breve.
+            Site fora do ar!! Volte em breve.
           </p>
           <a
             className="App-link"
