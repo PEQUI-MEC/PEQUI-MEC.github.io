@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
-import {FaExclamationTriangle} from "react-icons/fa";
+import { HashRouter , Route, Switch} from 'react-router-dom';
 import './App.css';
+import AtHome from "./scenes/teams/athome";
+import Home from "./scenes/home";
+import Header from "./scenes/header";
+import Teams from "./scenes/teams/home";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <p>
-            <FaExclamationTriangle style={{color:'yellow', fontSize:60}}/>
-          </p>
-          <p>
-            Site fora do ar! Volte em breve.
-          </p>
-          <a
-            className="App-link"
-            href="https://www.instagram.com/pequimecanico/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Siga o nosso instagram
-          </a>
-        </header>
+        <HashRouter>
+          <Header/>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/atHome" component={AtHome}/>
+            <Route exact path="/teams" component={Teams}/>
+          </Switch>
+        </HashRouter>
       </div>
     );
   }
