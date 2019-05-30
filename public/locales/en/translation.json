@@ -1,0 +1,10 @@
+{
+    "atHome": "@Home: first page",
+    "navbar": {
+        "about": "About Us",
+        "teams": "Teams",
+        "contact": "Contact",
+        "language": "Change Language:"
+    },
+    "teams": "Teams: first page"
+}
