@@ -17,7 +17,19 @@ i18n
   .init({
     fallbackLng: 'en',
     debug: false,
-
+    detection : {
+         order: [
+            // 'querystring',
+            'localStorage',
+            'cookie'
+            // 'htmlTag',
+            // 'path',
+            // 'navigator',
+            // 'subdomain'
+        ],
+        // lookupQuerystring: "lang",
+        caches: ["localStorage", "cookies"]
+    },
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
