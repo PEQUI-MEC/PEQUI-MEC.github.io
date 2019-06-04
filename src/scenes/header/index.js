@@ -50,6 +50,8 @@ class Header extends Component {
             <NavLink to="/teams/vsss">Very Small Size Soccer (VSSS)</NavLink>
           </div>
         </div>
+        <NavLink to='/projects' className='header-links'>{t('navbar.projects')}</NavLink>
+        <NavLink to='/membership' className='header-links'>{t('navbar.membership')}</NavLink>
         <NavLink to="/contact" className='header-links'>{t('navbar.contact')}</NavLink>
         <div className='header-languages'>
           {t('navbar.language')}

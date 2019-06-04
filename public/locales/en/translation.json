@@ -4,7 +4,9 @@
         "about": "About Us",
         "teams": "Teams",
         "contact": "Contact",
-        "language": "Change Language:"
+        "language": "Change Language:",
+        "membership": "Join Us",
+        "projects": "Projects"
     },
     "teams": "Teams: first page"
 }

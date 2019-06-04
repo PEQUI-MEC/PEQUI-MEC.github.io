@@ -74,7 +74,7 @@
   display: block;
 }
 
-@media screen and (max-width: 499px){
+@media screen and (max-width: 900px){
   /*styles for smartphones vertical*/
   .header-links, .header-languages {
     display: none;

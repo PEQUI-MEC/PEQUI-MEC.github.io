@@ -4,7 +4,9 @@
         "about": "Quem Somos",
         "teams": "Equipes",
         "contact": "Contato",
-        "language": "Mudar Idioma:"
+        "language": "Mudar Idioma:",
+        "membership": "Seja Membro",
+        "projects": "Projetos"
     },
     "teams": "Teams: primeira página"
 }
