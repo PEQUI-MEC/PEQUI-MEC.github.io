@@ -6,7 +6,7 @@
   display: flex;
 }
 
-.header-main > .header-links {
+.header-main > .header-links, .header-languages {
   color: lightgrey;
   text-decoration: none;
   margin-left: 10px;
@@ -16,6 +16,20 @@
 .header-main > .header-links:hover {
   color: #f5c920;
   text-decoration: none;
+}
+
+.header-languages {
+  display: flex;
+  align-items: center;
+}
+
+.header-languages:last-child {
+  margin-left: auto;
+}
+
+.header-languages img {
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .home-carousel{
@@ -34,5 +48,9 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+  }
+
+  .header-languages:last-child {
+    margin-left: 0;
   }
 }
