@@ -5,6 +5,7 @@ import AtHome from "./scenes/teams/athome";
 import Home from "./scenes/home";
 import Header from "./scenes/header";
 import Teams from "./scenes/teams/home";
+import Sek from './scenes/teams/sek';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route exact path="/atHome" component={AtHome}/>
+            <Route exact path="/sek" component={Sek}/>
             <Route exact path="/teams" component={Teams}/>
           </Switch>
         </HashRouter>

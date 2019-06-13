@@ -1,0 +1,22 @@
+.team-header-photo {
+  text-align: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.55);
+  background-blend-mode: overlay;
+  height: 300px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.team-header-photo h1 {
+  font-size: 60px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.team-body {
+  flex-direction: column;
+}

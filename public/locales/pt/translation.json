@@ -1,10 +1,15 @@
 {
-    "atHome": "@Home: primeira página",
-    "navbar": {
-        "about": "Quem Somos",
-        "teams": "Equipe",
-        "contact": "Contato",
-        "language": "Mudar Idioma:"
-    },
-    "teams": "Teams: primeira página"
+  "atHome": {
+    "robotTitle": "Conheça o Zordon"
+  },
+  "navbar": {
+      "about": "Quem Somos",
+      "teams": "Equipe",
+      "contact": "Contato",
+      "language": "Mudar Idioma:"
+  },
+  "teams": "Teams: primeira página",
+  "sek": {
+    "robotTitle": "Conheça o/a (Nome do Robô)"
+  }
 }

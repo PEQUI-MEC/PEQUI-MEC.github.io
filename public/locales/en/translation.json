@@ -1,10 +1,15 @@
 {
-    "atHome": "@Home: first page",
-    "navbar": {
-        "about": "About Us",
-        "teams": "Teams",
-        "contact": "Contact",
-        "language": "Change Language:"
-    },
-    "teams": "Teams: first page"
+  "atHome": {
+    "robotTitle": "Introducing Zordon"
+  },
+  "navbar": {
+      "about": "About Us",
+      "teams": "Teams",
+      "contact": "Contact",
+      "language": "Change Language:"
+  },
+  "teams": "Teams: first page",
+  "sek": {
+    "robotTitle": "Introducing (Robot's name)"
+  }
 }

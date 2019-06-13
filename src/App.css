@@ -1,3 +1,7 @@
+.App {
+  color: rgb(68, 68, 68);
+}
+
 .header-main {
   background-color: #434343;
   align-items: center;
@@ -37,6 +41,34 @@
   display: flex !important;
   justify-content: center;
   flex-wrap: nowrap;
+}
+
+.max-width {
+  max-width: 1048px;
+}
+
+.sc-hpa {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.hpa {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.column {
+  flex-direction: column;
 }
 
 @media screen and (max-width: 499px){
