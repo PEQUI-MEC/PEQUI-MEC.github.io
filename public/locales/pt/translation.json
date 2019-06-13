@@ -2,9 +2,11 @@
     "atHome": "@Home: primeira página",
     "navbar": {
         "about": "Quem Somos",
-        "teams": "Equipe",
+        "teams": "Equipes",
         "contact": "Contato",
-        "language": "Mudar Idioma:"
+        "language": "Mudar Idioma:",
+        "membership": "Seja Membro",
+        "projects": "Projetos"
     },
     "teams": "Teams: primeira página"
 }

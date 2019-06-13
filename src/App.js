@@ -14,7 +14,7 @@ class App extends Component {
           <Header/>
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/atHome" component={AtHome}/>
+            <Route exact path="/teams/atHome" component={AtHome}/>
             <Route exact path="/teams" component={Teams}/>
           </Switch>
         </HashRouter>
