@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import brand from '../../images/PQMEC_Logo4.png';
+import brand from '../../images/PQMEC_LogoCompletaBranca.png';
 import { NavLink } from 'react-router-dom';
 import { withTranslation } from 'react-i18next';
 import brFlag from '../../images/br.svg';

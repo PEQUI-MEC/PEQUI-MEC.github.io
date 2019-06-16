@@ -1,6 +1,10 @@
 {
   "atHome": {
-    "robotTitle": "Conheça o Zordon"
+    "robotTitle": "Conheça o Zordon",
+    "robot": "Descrição do robo",
+    "teamMember1": "Fulano de Tal, membro do Pequi Mecanico Nucleo de Robotica. Graduando de Engenharia de Computação da UFG.",
+    "teamMember2": "Fulano de Tal 2, membro do Pequi Mecanico Nucleo de Robotica. Graduando de Engenharia de Computação da UFG.",
+    "teamMember3": "Fulano de Tal 3, membro do Pequi Mecanico Nucleo de Robotica. Graduando de Engenharia de Computação da UFG."
   },
   "navbar": {
       "about": "Quem Somos",
@@ -9,6 +13,8 @@
       "language": "Mudar Idioma:"
   },
   "teams": "Teams: primeira página",
+  "teamMembersTitle": "Membros da Equipe",
+  "teamsOpenSourceTitle": "Material Open Source",
   "sek": {
     "robotTitle": "Conheça o/a (Nome do Robô)"
   }
