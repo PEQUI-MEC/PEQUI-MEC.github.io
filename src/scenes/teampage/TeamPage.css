@@ -39,3 +39,25 @@
   width: 100px;
   margin-right: 10px;
 }
+
+.team-member-description {
+  font-size: 16px;
+}
+
+.open-source-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.open-source-description {
+  font-size: 20px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+.open-source-description:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}

@@ -4,7 +4,8 @@
     "robot":  "Service robots are hardware and software systems that assist humans to perform daily tasks in complex environments, to achieve this:  they have to be able to understand spoken or gesture commands from humans; to be able to avoid static and dynamic obstacles while navigating in known and unknown environments;to be able to recognize and to manipulate objects and performing several other tasks  that  a  person  might  request. This year, 2019, will  be  our  first  year participating in the category RoboCup @Home. Our robots name is Zordon.",
     "teamMember1": "Fulano de Tal, member of Pequi Mecanico Robotics Team. Computer Engeneering undergraduate at UFG.",
     "teamMember2": "Fulano de Tal 2, member of Pequi Mecanico Robotics Team. Computer Engeneering undergraduate at UFG.",
-    "teamMember3": "Fulano de Tal 3, member of Pequi Mecanico Robotics Team. Computer Engeneering undergraduate at UFG."
+    "teamMember3": "Fulano de Tal 3, member of Pequi Mecanico Robotics Team. Computer Engeneering undergraduate at UFG.",
+    "openSource1": "Git repository"
   },
   "navbar": {
       "about": "About Us",

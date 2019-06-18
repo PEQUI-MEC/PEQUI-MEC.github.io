@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import TeamPage from '../teampage/TeamPage';
 import HeaderPhoto from '../../images/athome/Home2.jpg';
-import Eduardo from '../../images/athome/Eduardo.jpeg'
+import Eduardo from '../../images/athome/Eduardo.jpeg';
+import {FaGitSquare as GitIcon} from 'react-icons/fa';
 
 class AtHome extends Component {
   render() {
@@ -29,16 +30,8 @@ class AtHome extends Component {
     ];
     const openSourceObject = [
       {
-        photo: Eduardo,
-        description: this.props.t('atHome.teamMember1'),
-      },
-      {
-        photo: Eduardo,
-        description: this.props.t('atHome.teamMember2'),
-      },
-      {
-        photo: Eduardo,
-        description: this.props.t('atHome.teamMember3'),
+        photo: <GitIcon className='open-source-description'/>,
+        description: <a className='open-source-description' href='https://www.google.com'>{this.props.t('atHome.openSource1')}</a>,
       },
     ];
     return (

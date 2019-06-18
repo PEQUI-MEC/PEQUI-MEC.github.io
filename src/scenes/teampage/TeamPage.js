@@ -36,9 +36,9 @@ const TeamPage = ({ title, subtitle, robot, texts, background, teamMembers, open
           }
           { //aqui vira um icone e o link da pagina com o material opensource (githup modelos 3d etc)
               openSourceMaterial && openSourceMaterial.map(teamMember => (
-                  <div className='team-member-box'>
-                      <div style={{backgroundImage: `url(${teamMember.photo})`}} className='team-member-photo' ></div>
-                      <div className='team-member-description'>{teamMember.description}</div>
+                  <div className='open-source-box'>
+                      {teamMember.photo}
+                      <div className='open-source-description'>{teamMember.description}</div>
                   </div>
               ))
 
