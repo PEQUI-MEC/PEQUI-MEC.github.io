@@ -21,14 +21,6 @@ jobs:
         -v ${{ github.workspace }}:/var/www -v ${{ github.workspace }}/dist:/var/www/dist \
         pequi/laravel:latest /bin/bash -c "./install-dependencies.sh"
     -
-      name: Import GPG key
-      uses: crazy-max/ghaction-import-gpg@v3
-      with:
-        gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }}
-        git-user-signingkey: true
-        git-commit-gpgsign: true
-    -
       name: Deploy to GitHub Pages
       if: success()
       uses: crazy-max/ghaction-github-pages@v2
