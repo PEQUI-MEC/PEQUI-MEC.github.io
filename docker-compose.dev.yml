@@ -15,6 +15,8 @@ services:
       - ./:/var/www
     networks:
       - pequi
+    environment:
+      - APP_ENV=local
 
   nginx:
     image: nginx:alpine
