@@ -8,6 +8,7 @@ const sassUnicode = require("gulp-sass-unicode");
 const sourcemaps = require("gulp-sourcemaps");
 const gulpif = require("gulp-if");
 const terser = require("gulp-terser");
+const minifyCSS = require('gulp-minify-css');
 
 var buildDir = "public/assets";
 var assetsDir = "resources/assets";
@@ -16,6 +17,12 @@ var assetsDir = "resources/assets";
 var scssFiles = assetsDir + "/sass/app.scss";
 var scssAdminFiles = assetsDir + "/sass/admin.scss";
 var scssVendorFiles = assetsDir + "/sass/vendor.scss";
+
+// Arquivos css
+
+var cssFiles = [
+	"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
+];
 
 var scssWatchFiles = [
 	assetsDir + "/sass/**/*.scss"
@@ -100,6 +107,43 @@ function cssProdAdmin() {
 
 function cssProdVendor() {
 	return sass2Css(scssVendorFiles, "vendor", "prod");
+}
+
+/**
+ * Concatena os arquivos css
+ * @param env
+ * @returns
+ */
+function css2Minify(files, outputName, env = "dev") {
+
+	var sassConfig = {
+		outputStyle: env == "prod" ? "compressed" : "expanded"
+	};
+
+	return gulp.src(files)
+	.pipe(debug({ title: "css-debug" }))
+	.pipe(gulpif(env == "dev", sourcemaps.init()))
+	.pipe(concat(outputName + ".css"))
+	.pipe(minifyCSS())
+	.pipe(rename(outputName + ".min.css"))
+	.pipe(gulpif(env == "dev", sourcemaps.write()))
+	.pipe(gulp.dest(buildDir + "/css"));
+}
+
+/**
+ * Gera os arquivos css em desenvolvimento
+ * @returns
+ */
+function pureCssDev() {
+	return css2Minify(cssFiles, "vendor2");
+}
+
+/**
+ * Gera os arquivos css em produção
+ * @returns
+ */
+function pureCssProd() {
+	return css2Minify(cssFiles, "vendor2", "prod");
 }
 
 /**
@@ -213,7 +257,7 @@ function watch() {
  */
 gulp.task("clean", gulp.series(cleanBuild));
 //gulp.task("build", gulp.series(cleanBuild, jsProd, cssProd, cssProdAdmin, cssProdVendor, jsProdAdmin, vendorJsProd, images, fonts));
-gulp.task("build", gulp.series(cleanBuild, jsProd, cssProd, cssProdVendor, vendorJsProd, images, fonts));
+gulp.task("build", gulp.series(cleanBuild, jsProd, cssProd, cssProdVendor, pureCssProd, vendorJsProd, images, fonts));
 //gulp.task("default", gulp.series(cleanBuild, jsDev, cssDev, cssDevAdmin, cssDevVendor, jsDevAdmin, vendorJsDev, images, fonts));
-gulp.task("default", gulp.series(cleanBuild, jsDev, cssDev, cssDevVendor, vendorJsDev, images, fonts));
+gulp.task("default", gulp.series(cleanBuild, jsDev, cssDev, cssDevVendor, pureCssDev, vendorJsDev, images, fonts));
 gulp.task("watch", gulp.series("default", watch));
