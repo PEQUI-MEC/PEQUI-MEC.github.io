@@ -19,7 +19,7 @@ jobs:
         docker build -t pequi/laravel:latest -f Dockerfile.dev .
         docker run \
         -v ${{ github.workspace }}:/var/www -v ${{ github.workspace }}/dist:/var/www/dist \
-        pequi/laravel:latest /bin/bash -c "./install-dependencies.sh"
+        pequi/laravel:latest /bin/bash -c "./build.sh"  
     -
       name: Deploy to GitHub Pages
       if: success()

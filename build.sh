@@ -7,3 +7,6 @@ npm install
 gulp
 
 php artisan export
+
+echo "www.pequimecanico.com.br" > dist/CNAME
+ 
