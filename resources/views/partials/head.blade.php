@@ -8,6 +8,8 @@
 
 	<title>Pequi Mecânico</title>
 
+	<link rel="icon" href="{{ asset('assets/img/favicon.ico') }}" type="image/x-icon"/>
+
 	<link href="{{ asset('assets/css/vendor.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/css/styles.min.css') }}" rel="stylesheet">
 	
