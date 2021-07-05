@@ -1,8 +1,8 @@
 FROM php:7.2-fpm
 
 # Arguments defined in docker-compose.yml
-ARG user
-ARG uid
+ARG user=sammy
+ARG uid=1001
 
 #SHELL ["/bin/bash", "-c"] 
 
