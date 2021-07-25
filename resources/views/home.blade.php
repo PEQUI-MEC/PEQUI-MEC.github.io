@@ -63,7 +63,7 @@
 
                 <div class="section-title">
                     <h2>Sobre o Pequi Mecânico</h2>
-                    <p>A equipe de robótica da Universidade Federal de Goiás</p>
+                    <p>O núcleo de robótica da Universidade Federal de Goiás</p>
                 </div>
 
                 <div class="texts">
