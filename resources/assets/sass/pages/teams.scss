@@ -88,8 +88,10 @@
                     margin-bottom: 15px;
 
                     img {
-                        width: 100%;
                         border-radius: 5px 5px 0 0;
+                        width: 100%;
+                        max-width: 400px;
+                        max-height: 400px;
                     }
                 }
 
@@ -156,6 +158,19 @@
 
                                 &.twitter:before {
                                     content: "\f099";
+                                }
+
+                                &.linkedin:before {
+                                    content: "\f08c";
+                                }
+
+                                &.github:before {
+                                    content: "\f09b";
+                                }
+
+                                &.email:before {
+                                    font-family: 'Font Awesome 5 Free';
+                                    content: "\f0e0";
                                 }
                             }
                         }

@@ -8,14 +8,14 @@
 
         <div class="background">
             <div class="background-inner">
-                <img src="{{ asset('assets/img/equipes/humanoide/1.jpg') }}"/>
+                <img src="{{ asset('assets/img/equipes/humanoide/home.jpg') }}"/>
             </div>
         </div>
 
         <div class="header-content">
             <div class="container title">
                 <h1>Equipe <b>@HOME</b></h1>
-                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+                <small>RoboCup – @Home </small>
             </div>
         </div>
 
@@ -27,17 +27,19 @@
 
             <div class="texts">
                 <!-- <span>RoboCup Soccer Humanoid League<small>KidSize Class</small></span> -->
-                <p>A história da equipe PMec Humanoid começou em 2015 para participar da Latin American Competition of Robotics (LARC) na categoria IEEE Humanoid Robot Racing Child Size com apenas dois membros, Hugo Eduardo e Juan Ramón. Desde então, a equipe cresceu muito e, em 2018, optou por expandir as áreas de pesquisa para participar da categoria RoboCup Soccer Humanoid.</p>
-                <p>O objetivo dessa equipe, como na iniciativa internacional Robocup, é desenvolver robôs autônomos com plano corporal humano e sentidos humanos capazes de jogar futebol um contra o outro na classe KidSize (40-90cm tamanho).</p>
-                <p>Pesquisas realizadas na Humanoid League - caminhada, corrida, e chute de bola mantendo o equilíbrio, percepção visual da bola, de outros jogadores, e do campo, auto- localização e jogo em equipe.</p>
+                <p>A equipe @Home do Pequi Mecânico começou em 2019 com o objetivo de participar da Latin American Competition of Robotics (LARC) na categoria Robocup @Home com o robô Zordon.</p>
+                <p>A liga RoboCup @Home visa desenvolver tecnologia de serviço e robô de assistência para futuras aplicações domésticas pessoais. Os robôs precisam realizar tarefas e testes dentro de uma casa simulada, um ambiente realista e não padronizado.</p>
+                <p>O foco está nos seguintes domínios: Interação e Cooperação Humano-Robô, Navegação e Mapeamento em ambientes dinâmicos, Visão Computacional e Reconhecimento de Objetos sob condições de luz natural, Manipulação de Objetos, Comportamentos Adaptativos, Integração de Comportamento, Inteligência Ambiental, Padronização e integração de sistemas.</p>
             </div>
 
             <div class="team-wrapper">
 
                 <div class="title">
                     <h1>Conheça a <b>equipe</b></h1>
+                    <!--
                     <span></span>
                     <p> Nunc non tempus quam, non faucibus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                    -->
                 </div>
 
                 <div class="swiper-container">
@@ -90,8 +92,10 @@
 
                 <div class="title">
                     <h1>Galeria de <b>Fotos</b></h1>
+                    <!--
                     <span></span>
                     <p> Nunc non tempus quam, non faucibus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                    -->
                 </div>
 
                 <div class="swiper-container">

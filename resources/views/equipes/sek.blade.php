@@ -15,7 +15,7 @@
         <div class="header-content">
             <div class="container title">
                 <h1>Equipe <b>SEK</b></h1>
-                <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit</small>
+                <small>IEEE - Standard Educational Kit </small>
             </div>
         </div>
 
@@ -35,8 +35,10 @@
 
                 <div class="title">
                     <h1>Conheça a <b>equipe</b></h1>
+                    <!--
                     <span></span>
                     <p> Nunc non tempus quam, non faucibus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                    -->
                 </div>
 
                 <div class="swiper-container">
@@ -89,8 +91,10 @@
 
                 <div class="title">
                     <h1>Galeria de <b>Fotos</b></h1>
+                    <!--
                     <span></span>
                     <p> Nunc non tempus quam, non faucibus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                    -->
                 </div>
 
                 <div class="swiper-container">

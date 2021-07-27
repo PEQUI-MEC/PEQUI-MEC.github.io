@@ -10,64 +10,58 @@ use Illuminate\Support\Facades\File;
  */
 class TeamsController extends Controller {
 
+    private function get_members_data() {
+        $spreadsheet_url="https://docs.google.com/spreadsheets/d/1H9ofWJM28SeQ4Yuig94vHevLLF9hgOXAV48K8nUfk8Y/export?format=csv";
+
+        if(!ini_set('default_socket_timeout', 15)) echo "<!-- unable to change socket timeout -->";
+
+        $contents = file_get_contents($spreadsheet_url);
+        #echo $contents;
+
+        $csv = str_getcsv($contents);
+        $teams = [];
+        foreach (explode(PHP_EOL, $contents) as $key => &$Row) {
+            if($key === 0) continue;
+            $data = str_getcsv($Row, ",");
+            $member = array();
+            
+            if (!array_key_exists($data[1], $teams)) {
+                $teams[$data[1]] = array();
+            }
+            #$team = $teams[$data[1]];
+
+            if (empty($data[8])) {
+                $member["image"] = asset('assets/img/default.jpg');
+            } else {
+                $member["image"] = $data[8];
+            }     
+            
+            $member["name"] = $data[2];
+            $member["description"] = $data[3];
+            $member["text"] = $data[2];
+            $member["social"] = [
+                "linkedin" => $data[4],
+                "github" => $data[5],
+                "email" => "mailto:" . $data[6]
+            ];
+
+            $teams[$data[1]][] = $member;
+        }
+
+        return $teams;
+
+    }
+
     /**
      * Exibir tela interna da equipe @home
      * @return view
      */
     public function home(Request $request) {
 
-        $team = [
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/6.jpg",
-                "name" => "Alea Smith",
-                "description" => "Engenharia da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/7.jpg",
-                "name" => "Ariol Doe",
-                "description" => "Engenharia Elétrica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/8.jpg",
-                "name" => "Emma Ross",
-                "description" => "Engenharia Mecânica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/9.jpg",
-                "name" => "Victor Loda",
-                "description" => "Ciência da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ]
-        ];
+        $teams = $this->get_members_data();
+        $team = $teams["@Home"];
 
-        for ($i = 0; $i < random_int(1, 3); $i++) {
-            array_push($team, $team[random_int(0, count($team) - 1)]);
-        }
-
-        $assetsFolder = "assets/img/equipes/humanoide";
+        $assetsFolder = "assets/img/equipes/home";
         $path = public_path($assetsFolder);
 
         $files = File::files($path);
@@ -88,56 +82,8 @@ class TeamsController extends Controller {
      */
     public function humanoide(Request $request) {
 
-        $team = [
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/6.jpg",
-                "name" => "Alea Smith",
-                "description" => "Engenharia da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/7.jpg",
-                "name" => "Ariol Doe",
-                "description" => "Engenharia Elétrica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/8.jpg",
-                "name" => "Emma Ross",
-                "description" => "Engenharia Mecânica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/9.jpg",
-                "name" => "Victor Loda",
-                "description" => "Ciência da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ]
-        ];
-
-        for ($i = 0; $i < random_int(1, 3); $i++) {
-            array_push($team, $team[random_int(0, count($team) - 1)]);
-        }
+        $teams = $this->get_members_data();
+        $team = $teams["Humanoid"];
 
         $assetsFolder = "assets/img/equipes/humanoide";
         $path = public_path($assetsFolder);
@@ -160,56 +106,8 @@ class TeamsController extends Controller {
      */
     public function sek(Request $request) {
 
-        $team = [
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/6.jpg",
-                "name" => "Alea Smith",
-                "description" => "Engenharia da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/7.jpg",
-                "name" => "Ariol Doe",
-                "description" => "Engenharia Elétrica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/8.jpg",
-                "name" => "Emma Ross",
-                "description" => "Engenharia Mecânica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/9.jpg",
-                "name" => "Victor Loda",
-                "description" => "Ciência da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ]
-        ];
-
-        for ($i = 0; $i < random_int(1, 3); $i++) {
-            array_push($team, $team[random_int(0, count($team) - 1)]);
-        }
+        $teams = $this->get_members_data();
+        $team = $teams["SEK"];
 
         $assetsFolder = "assets/img/equipes/sek";
         $path = public_path($assetsFolder);
@@ -232,56 +130,8 @@ class TeamsController extends Controller {
      */
     public function vsss(Request $request) {
 
-        $team = [
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/6.jpg",
-                "name" => "Alea Smith",
-                "description" => "Engenharia da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/7.jpg",
-                "name" => "Ariol Doe",
-                "description" => "Engenharia Elétrica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/8.jpg",
-                "name" => "Emma Ross",
-                "description" => "Engenharia Mecânica",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ],
-            [
-                "image" => "https://inspirothemes.com/polo/images/team/9.jpg",
-                "name" => "Victor Loda",
-                "description" => "Ciência da Computação",
-                "text" => "The most happiest time of the day!. Praesent tristique hendrerit ex ut laoreet.",
-                "social" => [
-                    "facebook" => "faceboom.com/victornoleto",
-                    "twitter" => "twitter.com/victornoleto",
-                    "instagram" => "instagram.com/victornoleto"
-                ]
-            ]
-        ];
-
-        for ($i = 0; $i < random_int(1, 3); $i++) {
-            array_push($team, $team[random_int(0, count($team) - 1)]);
-        }
+        $teams = $this->get_members_data();
+        $team = $teams["VSSS"];
 
         $assetsFolder = "assets/img/equipes/vsss";
         $path = public_path($assetsFolder);
