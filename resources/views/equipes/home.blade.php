@@ -8,7 +8,7 @@
 
         <div class="background">
             <div class="background-inner">
-                <img src="{{ asset('assets/img/equipes/humanoide/home.jpg') }}"/>
+                <img src="{{ asset('assets/img/equipes/home/primeiro_robo.jpg') }}"/>
             </div>
         </div>
 
