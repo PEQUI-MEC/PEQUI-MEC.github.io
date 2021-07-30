@@ -11,9 +11,9 @@
                     <h3>Gostaria de ajudar o projeto?</h3>
                 </div>
     
-                <p>Lorem ipsum dolor sit amet curabitur eu dapibus felis. Morbi ut dolor ut mi ultricies lobortis.<br>Morbi et viverra turpis. Donec cursus ornare purus nec porttitor.</p>
+                <p>Clique no botão abaixo para nos ajudar!<br>Lembrando, qualquer quantia é de grande valor para o movimento.</p>
     
-                <a href="#" class="btn btn-primary">Download Minutes Now</a>
+                <a href="#" class="btn btn-primary">Doe aqui!</a>
     
             </div>
     
@@ -29,7 +29,7 @@
                 
                 <div class="col-12 col-md-8 column-1">
 					<div class="footer-logo"><a href="index.html">Pequi</a></div>
-					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit rhoncus tempus perdiet risus sit amet volutpat.</p>
+					<p>O movimento que visa estimular o aprendizado de robótica entre estudantes!</p>
 					<ul class="footer-social">
 						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
 						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>

@@ -18,7 +18,7 @@
         <div class="message-wrapper">
             <div class="message-inner container">
                 <div class="title"><h2>LARC 2020</h2></div>
-                <div class="text"><p>Lorem ipsum dolor sit amet ipsum lectus neumew nulla rhoncus eu quam sit amet varius lectus eget ligula eleifend rutrum ac vel justo.</p></div>
+                <div class="text"><p>Contagem de dias para o evento mais esperado do ano!</p></div>
                 <div class="countdown">
                     <div><h2>02</h2><p>meses</p></div>
                     <div><h2>03</h2><p>dias</p></div>
