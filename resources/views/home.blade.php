@@ -17,24 +17,26 @@
 
         <div class="message-wrapper">
             <div class="message-inner container">
-                <div class="title"><h2>LARC 2020</h2></div>
+                <div class="title"><h2>LARC 2021</h2></div>
                 <div class="text"><p>Contagem de dias para o evento mais esperado do ano!</p></div>
                 <div class="countdown">
-                    <div><h2>02</h2><p>meses</p></div>
-                    <div><h2>03</h2><p>dias</p></div>
-                    <div><h2>10</h2><p>horas</p></div>
-                    <div><h2>12</h2><p>minutos</p></div>
-                    <div><h2>50</h2><p>segundos</p></div>
+                    <!-- <div><h2 id="month">02</h2><p>meses</p></div> -->
+                    <div><h2 id="day">00</h2><p>dias</p></div>
+                    <div><h2 id="hour">00</h2><p>horas</p></div>
+                    <div><h2 id="min">00</h2><p>minutos</p></div>
+                    <div><h2 id="sec">00</h2><p>segundos</p></div>
                 </div>
+                <!--
                 <div class="buttons">
                     <button type="button" class="btn btn-primary">Purchase now</button>
                     <button type="buttoN" class="btn btn-dark">Learn more</button>
                 </div>
+                -->
             </div>
         </div>
 
     </section>
-
+    <!--
     <section class="sponsors-section">
 
         <div class="container1">
@@ -54,7 +56,7 @@
         </div>
 
     </section>
-
+    -->
     <section class="about-section">
 
         <div class="container">
