@@ -159,7 +159,7 @@
                     <div class="team">
                         <div class="team-inner">
                             <div class="thumb">
-                                <img src="{{ asset('assets/img/equipes/vsss/_DSC5981.JPG') }}"/>
+                                <img src="{{ asset('assets/img/equipes/vsss/vss1.jpg') }}"/>
                             </div>
                             <div class="text">
                                 <h2>VSSS</h2>

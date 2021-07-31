@@ -13,7 +13,7 @@
     
                 <p>Clique no botão abaixo para nos ajudar!<br>Lembrando, qualquer quantia é de grande valor para o movimento.</p>
     
-                <a href="#" class="btn btn-primary">Doe aqui!</a>
+                <button href="#" class="btn btn-primary" disabled>Em Breve...</button>
     
             </div>
     
@@ -30,11 +30,11 @@
                 <div class="col-12 col-md-8 column-1">
 					<div class="footer-logo"><a href="index.html">Pequi</a></div>
 					<p>O movimento que visa estimular o aprendizado de robótica entre estudantes!</p>
-					<ul class="footer-social">
-						<li><a href="https://www.instagram.com/pequimecanico/"><i class="fab fa-instagram"></i></a></li>
-						<li><a href="https://github.com/PEQUI-MEC"><i class="fab fa-youtube-square"></i></a></li>
-						<li><a href="https://www.youtube.com/channel/UCDHqVynBVMcktQKgd5xZb1Q"><i class="fab fa-github"></i></a></li>
-						<li><a href="maito:pequimecanicoufg@gmail.com"><i class="fas fa-envelope-square"></i></i></a></li>
+					<ul class="footer-list">
+						<li><a href="https://www.instagram.com/pequimecanico/" target="_blank"><i class="fab fa-instagram"></i> - Instagram</a></li>
+						<li><a href="https://github.com/PEQUI-MEC" target="_blank"><i class="fab fa-youtube-square"></i> - GitHub</a></li>
+						<li><a href="https://www.youtube.com/channel/UCDHqVynBVMcktQKgd5xZb1Q" target="_blank"><i class="fab fa-github"></i> - YouTube</a></li>
+						<li><a href="maito:pequimecanicoufg@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></i> - E-Mail</a></li>
 					</ul>
                 </div>
                 
