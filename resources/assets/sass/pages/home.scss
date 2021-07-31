@@ -733,4 +733,19 @@
         }
     }
 
+    .team-link {
+        color: white;
+    
+        &:hover {
+            color: lightblue;
+        }
+        img {
+            transition: all .2s ease-in-out;
+            &:hover {
+                transform: translate(-50%, -50%) scale(1.1) !important;
+            }
+        }
+        
+    }
+
 }

@@ -4,7 +4,7 @@
 
 		<div class="container">
 
-			<a class="navbar-brand" href="#">Pequi Mecânico</a>
+			<a class="navbar-brand" href="{{ url('/') }}">Pequi Mecânico</a>
 
 			<div class="menu-toggle">
 				<i class="fas fa-bars"></i>

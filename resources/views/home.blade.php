@@ -122,49 +122,57 @@
 
                     <div class="team">
                         <div class="team-inner">
-                            <div class="thumb">
-                                <img src="{{ asset('assets/img/equipes/home/primeiro_robo.jpg') }}"/>
-                            </div>
-                            <div class="text">
-                                <h2>@HOME</h2>
-                                <p>A liga RoboCup @Home visa desenvolver tecnologia de serviço e robô de assistência para futuras aplicações domésticas pessoais.</p>
-                            </div>
+                            <a href="{{ url('equipes/@home') }}" class="team-link">
+                                <div class="thumb">
+                                    <img src="{{ asset('assets/img/equipes/home/primeiro_robo.jpg') }}"/>
+                                </div>
+                                <div class="text">
+                                    <h2>@HOME</h2>
+                                    <p>A liga RoboCup @Home visa desenvolver tecnologia de serviço e robô de assistência para futuras aplicações domésticas pessoais.</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="team">
                         <div class="team-inner">
-                            <div class="thumb">
-                                <img src="{{ asset('assets/img/equipes/humanoide/2.jpg') }}"/>
-                            </div>
-                            <div class="text">
-                                <h2>Humanóide</h2>
-                                <p>desenvolvem robôs autônomos com plano corporal humano e sentidos humanos capazes de jogar futebol</p>
-                            </div>
+                            <a href="{{ url('equipes/humanoide') }}" class="team-link">
+                                <div class="thumb">
+                                    <img src="{{ asset('assets/img/equipes/humanoide/2.jpg') }}"/>
+                                </div>
+                                <div class="text">
+                                    <h2>Humanóide</h2>
+                                    <p>Desenvolvem robôs autônomos com plano corporal humano e sentidos humanos capazes de jogar futebol</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="team">
                         <div class="team-inner">
-                            <div class="thumb">
-                                <img src="{{ asset('assets/img/equipes/sek/sek2.jpg') }}"/>
-                            </div>
-                            <div class="text">
-                                <h2>SEK</h2>
-                                <p>Conheça a porta de entrada do núcleo, onde estudantes tem contato com conceitos base de robótica!</p>
-                            </div>
+                            <a href="{{ url('equipes/sek') }}" class="team-link">
+                                <div class="thumb">
+                                    <img src="{{ asset('assets/img/equipes/sek/sek2.jpg') }}"/>
+                                </div>
+                                <div class="text">
+                                    <h2>SEK</h2>
+                                    <p>Conheça a porta de entrada do núcleo, onde estudantes tem contato com conceitos base de robótica!</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
                     <div class="team">
                         <div class="team-inner">
-                            <div class="thumb">
-                                <img src="{{ asset('assets/img/equipes/vsss/vss1.jpg') }}"/>
-                            </div>
-                            <div class="text">
-                                <h2>VSSS</h2>
-                                <p>Conheça a equipe que tem como objetivo de desenvolver a pesquisa em visão, controle, eletrônica e estrutura com partidas de futebol!</p>
-                            </div>
+                            <a href="{{ url('equipes/vsss') }}" class="team-link">
+                                <div class="thumb">
+                                    <img src="{{ asset('assets/img/equipes/vsss/vss1.jpg') }}"/>
+                                </div>
+                                <div class="text">
+                                    <h2>VSSS</h2>
+                                    <p>Conheça a equipe que tem como objetivo de desenvolver a pesquisa em visão, controle, eletrônica e estrutura com partidas de futebol!</p>
+                                </div>
+                            </a>
                         </div>  
                     </div>
                 
