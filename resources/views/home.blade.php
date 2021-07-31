@@ -152,7 +152,7 @@
                         <div class="team-inner">
                             <a href="{{ url('equipes/sek') }}" class="team-link">
                                 <div class="thumb">
-                                    <img src="{{ asset('assets/img/equipes/sek/sek2.jpg') }}"/>
+                                    <img src="{{ asset('assets/img/equipes/sek/sek-robo.jpg') }}"/>
                                 </div>
                                 <div class="text">
                                     <h2>SEK</h2>
