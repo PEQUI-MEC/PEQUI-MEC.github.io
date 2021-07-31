@@ -31,6 +31,10 @@
 				</li>
 
 				<li class="nav-item">
+					<a class="nav-link" href="https://www.youtube.com/channel/UCDHqVynBVMcktQKgd5xZb1Q" target="_blank">Videos</a>
+				</li>
+
+				<li class="nav-item">
 					<a class="nav-link" href="#contato">Contato</a>
 				</li>
 
