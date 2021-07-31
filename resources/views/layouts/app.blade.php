@@ -17,8 +17,8 @@
 
 		</div>
 
-		<script defer src="{{ asset('assets/js/vendor.min.js') }}?v{{ date('ymd') }}"></script>
-    	<script defer src="{{ asset('assets/js/scripts.min.js') }}?v{{ date('ymd') }}"></script>
+		<script defer src="{{ asset('assets/js/vendor.min.js') }}?v{{ date('U') }}"></script>
+    	<script defer src="{{ asset('assets/js/scripts.min.js') }}?v{{ date('U') }}"></script>
 
 	</body>
 

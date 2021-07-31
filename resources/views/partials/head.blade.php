@@ -10,9 +10,9 @@
 
 	<link rel="icon" href="{{ asset('assets/img/favicon.ico') }}" type="image/x-icon"/>
 
-	<link href="{{ asset('assets/css/vendor.min.css') }}?v{{ date('ymd') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/vendor2.min.css') }}?v{{ date('ymd') }}" rel="stylesheet">
-	<link href="{{ asset('assets/css/styles.min.css') }}?v{{ date('ymd') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/vendor.min.css') }}?v{{ date('U') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/vendor2.min.css') }}?v{{ date('U') }}" rel="stylesheet">
+	<link href="{{ asset('assets/css/styles.min.css') }}?v{{ date('U') }}" rel="stylesheet">
 	
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
