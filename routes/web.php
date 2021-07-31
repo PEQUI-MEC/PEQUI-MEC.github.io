@@ -21,10 +21,10 @@ Route::get("/", function() {
     return view("home");
 });
 
-Route::get("/equipes/humanoide", function() {
-    return view("equipes.humanoide");
-});
-
+//Route::get("/equipes/humanoide", function() {
+//    return view("equipes.humanoide");
+//});
+Route::get("/publications", "PublicationsController@publications");
 Route::get("/equipes/@home", "TeamsController@home");
 Route::get("/equipes/humanoide", "TeamsController@humanoide");
 Route::get("/equipes/sek", "TeamsController@sek");
