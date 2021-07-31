@@ -48,6 +48,11 @@ class TeamsController extends Controller {
             $teams[$data[1]][] = $member;
         }
 
+        foreach (array_keys($teams) as $key){
+            $name = array_column($teams[$key], 'name');
+            array_multisort($name, SORT_ASC, $teams[$key]);
+        }
+        
         return $teams;
 
     }
