@@ -20,6 +20,7 @@ return [
         '/equipes/humanoide',
         '/equipes/sek',
         '/equipes/vsss',
+        '/publications'
     ],
 
     /*

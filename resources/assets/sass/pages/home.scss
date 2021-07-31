@@ -20,15 +20,15 @@
                     background-size: cover !important;
                     
                     &[data-swiper-slide-index="0"] {
-                        background: #333 url(../img/bg.jpg) no-repeat center bottom;
+                        background: #333 url(../img/bg1.jpg) no-repeat center bottom;
                     }
 
                     &[data-swiper-slide-index="1"] {
-                        background: #333 url(https://theme.express/minutes/images/bg/1.jpg) no-repeat center bottom;
+                        background: #333 url(../img/bg2.jpg) no-repeat center bottom;
                     }
 
                     &[data-swiper-slide-index="2"] {
-                        background: #333 url(https://theme.express/minutes/images/bg/1.jpg) no-repeat center bottom;
+                        background: #333 url(../img/bg3.jpg) no-repeat center bottom;
                     }
 
                     &:after {
