@@ -42,7 +42,7 @@
             <div class="team-wrapper">
 
                 <div class="title">
-                    <h1>TDP's</b></h1>
+                    <h1>TDP's (Team Descriptor Paper)</b></h1>
                 </div>
 
                 <div class="texts">
