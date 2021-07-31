@@ -70,31 +70,30 @@
     
                     <div class="item left">
                         <div class="thumb">
-                            <img src="https://wallpaperaccess.com/full/783261.jpg">
+                            <img src="{{ asset('assets/img/equipes/bg.jpg') }}"/>
                         </div>
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum feugiat enim, id varius risus. Curabitur hendrerit orci turpis, vitae fringilla diam molestie nec. Praesent eu lectus sed mauris cursus porta. Aliquam convallis dictum dolor. Sed porta bibendum ante quis dignissim. Sed tristique ex eget rutrum congue. Nunc elit nisi, dictum eget egestas ac, pulvinar eget erat. Sed consequat ultricies imperdiet. Cras porttitor sit amet nibh sit amet congue.</p>
-                            <p>Maecenas gravida sapien ac nunc ultricies, ac tincidunt enim interdum. Nam nisi dolor, vehicula in aliquam a, aliquam sed mauris. Duis sagittis hendrerit facilisis. Duis ullamcorper neque vitae magna eleifend semper. Praesent ultrices neque orci, at tristique nulla viverra vel. In ac lorem mauris. Proin sollicitudin porta quam, varius aliquam justo consequat quis.</p>
+                            <p>Em 2010 quatro alunos da Universidade Federal de Goiás (UFG) foram participar do Torneio de Robótica Universitária (TRU) que acontecia na Universidade federal de Uberlândia (UFU) e, após participar da competição, decidiram fundar um núcleo de robótica com o objetivo de juntar mais pessoas com o mesmo interesse e participar de mais competições, e assim nasceu o Pequi Mecânico.</p>
+                            <p>A primeira competição a participarem foi a IEEE Standart Educacional Kit (SEK), categoria esta que até hoje o núcleo marca presença em todos os anos e que o núcleo já conquistou primeiro e terceiro lugar na Latin American Robotic Competition (LARC).</p>
                         </div>
                     </div>
     
                     <div class="item right">
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum feugiat enim, id varius risus. Curabitur hendrerit orci turpis, vitae fringilla diam molestie nec. Praesent eu lectus sed mauris cursus porta. Aliquam convallis dictum dolor. Sed porta bibendum ante quis dignissim. Sed tristique ex eget rutrum congue. Nunc elit nisi, dictum eget egestas ac, pulvinar eget erat. Sed consequat ultricies imperdiet. Cras porttitor sit amet nibh sit amet congue.</p>
-                            <p>Maecenas gravida sapien ac nunc ultricies, ac tincidunt enim interdum. Nam nisi dolor, vehicula in aliquam a, aliquam sed mauris. Duis sagittis hendrerit facilisis. Duis ullamcorper neque vitae magna eleifend semper. Praesent ultrices neque orci, at tristique nulla viverra vel. In ac lorem mauris. Proin sollicitudin porta quam, varius aliquam justo consequat quis.</p>
+                            <p>Depois dessa primeira participação, o núcleo foi, a cada ano, aderindo a mais categorias, chegando a participar do IEEE Very Small Size Soccer, IEEE OPEN, Robocup Humanoid Racing, Robocup Simulation 2D, Open Flight (Desafio de Robótica Petrobrás), Robocup Humanoid Soccer, Robocup @home.</p>
+                            <p>Além das competições, o núcleo participou de diversos projetos educacionais, levando a robótica a diversas cidades do interior de Goiás com minicursos, workshops, eventos demonstrativos e parcerias com prefeituras no treinamento de alunos e professores da rede pública.</p>
                         </div>
                         <div class="thumb">
-                            <img src="https://wallpaperaccess.com/full/783261.jpg">
+                            <img src="{{ asset('assets/img/equipes/humanoide/1.jpg') }}"/>
                         </div>
                     </div>
     
                     <div class="item left">
                         <div class="thumb">
-                            <img src="https://wallpaperaccess.com/full/783261.jpg">
+                            <img src="{{ asset('assets/img/equipes/vsss/IMG-20191025-WA0085.jpg') }}"/>
                         </div>
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum feugiat enim, id varius risus. Curabitur hendrerit orci turpis, vitae fringilla diam molestie nec. Praesent eu lectus sed mauris cursus porta. Aliquam convallis dictum dolor. Sed porta bibendum ante quis dignissim. Sed tristique ex eget rutrum congue. Nunc elit nisi, dictum eget egestas ac, pulvinar eget erat. Sed consequat ultricies imperdiet. Cras porttitor sit amet nibh sit amet congue.</p>
-                            <p>Maecenas gravida sapien ac nunc ultricies, ac tincidunt enim interdum. Nam nisi dolor, vehicula in aliquam a, aliquam sed mauris. Duis sagittis hendrerit facilisis. Duis ullamcorper neque vitae magna eleifend semper. Praesent ultrices neque orci, at tristique nulla viverra vel. In ac lorem mauris. Proin sollicitudin porta quam, varius aliquam justo consequat quis.</p>
+                            <p>Aqueles quatro alunos, em 2010, não tinham ideia do que eles estavam criando, mas, conseguiram acender uma chama no coração de muitas pessoas que foram abraçando a ideia de criar não só um núcleo de robótica, mas uma grande família de desenvolvedores e entusiastas que sonham em poder democratizar, e desmistificar a robótica como algo de outro mundo, tornando-se uma referência na área em todo o centro oeste.</p>
                         </div>
                     </div>
     
@@ -119,24 +118,56 @@
 
                 <div class="teams">
 
-                    @for ($i = 0; $i < 4; $i++)
-
                     <div class="team">
                         <div class="team-inner">
                             <div class="thumb">
-                                <img src="https://wallpaperaccess.com/full/783261.jpg">
+                                <img src="{{ asset('assets/img/equipes/home/primeiro_robo.jpg') }}"/>
                             </div>
                             <div class="text">
-                                <h2>Título da equipe</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra varius tellus. Mauris ut mi vel urna tempus aliquet. Praesent eget dolor sit amet risus suscipit sagittis. Mauris quis lobortis neque. Quisque euismod, lorem a pulvinar mollis, leo sem semper dolor, in tempus quam lorem lobortis justo. In ultrices eros posuere nibh blandit, at auctor neque placerat. Integer dapibus hendrerit velit id auctor. Nunc eu risus erat. Aenean pulvinar cursus justo sit amet scelerisque. Suspendisse nec tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse finibus finibus dolor, sed dapibus neque convallis in. Sed faucibus, magna sit amet elementum faucibus, sapien est tincidunt augue, vel vulputate nulla dolor nec nisl. Etiam blandit urna et dui porta pulvinar. Nunc venenatis fermentum diam pulvinar blandit.</p>
+                                <h2>@HOME</h2>
+                                <p>A liga RoboCup @Home visa desenvolver tecnologia de serviço e robô de assistência para futuras aplicações domésticas pessoais.</p>
                             </div>
                         </div>
                     </div>
 
-                    @endfor
+                    <div class="team">
+                        <div class="team-inner">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/img/equipes/humanoide/2.jpg') }}"/>
+                            </div>
+                            <div class="text">
+                                <h2>Humanóide</h2>
+                                <p>desenvolvem robôs autônomos com plano corporal humano e sentidos humanos capazes de jogar futebol</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="team">
+                        <div class="team-inner">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/img/equipes/sek/sek3.jpg') }}"/>
+                            </div>
+                            <div class="text">
+                                <h2>SEK</h2>
+                                <p>Conheça a porta de entrada do núcleo, onde estudantes tem contato com conceitos base de robótica!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-inner">
+                            <div class="thumb">
+                                <img src="{{ asset('assets/img/equipes/vsss/IMG-20191025-WA0085.jpg') }}"/>
+                            </div>
+                            <div class="text">
+                                <h2>VSSS</h2>
+                                <p>Conheça a equipe que tem como objetivo de desenvolver a pesquisa em visão, controle, eletrônica e estrutura com partidas de futebol!</p>
+                            </div>
+                        </div>  
+                    </div>
+                
                 </div>
-
+        
             </div>
 
         </div>
