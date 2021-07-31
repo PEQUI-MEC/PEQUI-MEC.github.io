@@ -40,6 +40,9 @@
                     <p> Nunc non tempus quam, non faucibus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                     -->
                 </div>
+                <div class="texts">
+                    <p><b>Capitã(o) de Equipe:</b> Werikcyano Lima Guimarães - <a href="mailto:werikguimaraes@gmail.com">werikguimaraes@gmail.com</a></p>
+                </div>
 
                 <div class="swiper-container">
                     

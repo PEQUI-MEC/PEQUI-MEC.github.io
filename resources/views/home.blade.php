@@ -72,7 +72,7 @@
     
                     <div class="item left">
                         <div class="thumb">
-                            <img src="{{ asset('assets/img/equipes/bg.jpg') }}"/>
+                            <img src="{{ asset('assets/img/bg3.jpg') }}"/>
                         </div>
                         <div class="text">
                             <p>Em 2010 quatro alunos da Universidade Federal de Goiás (UFG) foram participar do Torneio de Robótica Universitária (TRU) que acontecia na Universidade federal de Uberlândia (UFU) e, após participar da competição, decidiram fundar um núcleo de robótica com o objetivo de juntar mais pessoas com o mesmo interesse e participar de mais competições, e assim nasceu o Pequi Mecânico.</p>
@@ -86,13 +86,13 @@
                             <p>Além das competições, o núcleo participou de diversos projetos educacionais, levando a robótica a diversas cidades do interior de Goiás com minicursos, workshops, eventos demonstrativos e parcerias com prefeituras no treinamento de alunos e professores da rede pública.</p>
                         </div>
                         <div class="thumb">
-                            <img src="{{ asset('assets/img/equipes/humanoide/1.jpg') }}"/>
+                            <img src="{{ asset('assets/img/home1.jpg') }}"/>
                         </div>
                     </div>
     
                     <div class="item left">
                         <div class="thumb">
-                            <img src="{{ asset('assets/img/equipes/vsss/IMG-20191025-WA0085.jpg') }}"/>
+                            <img src="{{ asset('assets/img/home2.jpg') }}"/>
                         </div>
                         <div class="text">
                             <p>Aqueles quatro alunos, em 2010, não tinham ideia do que eles estavam criando, mas, conseguiram acender uma chama no coração de muitas pessoas que foram abraçando a ideia de criar não só um núcleo de robótica, mas uma grande família de desenvolvedores e entusiastas que sonham em poder democratizar, e desmistificar a robótica como algo de outro mundo, tornando-se uma referência na área em todo o centro oeste.</p>
@@ -147,7 +147,7 @@
                     <div class="team">
                         <div class="team-inner">
                             <div class="thumb">
-                                <img src="{{ asset('assets/img/equipes/sek/sek3.jpg') }}"/>
+                                <img src="{{ asset('assets/img/equipes/sek/sek2.jpg') }}"/>
                             </div>
                             <div class="text">
                                 <h2>SEK</h2>
@@ -159,7 +159,7 @@
                     <div class="team">
                         <div class="team-inner">
                             <div class="thumb">
-                                <img src="{{ asset('assets/img/equipes/vsss/IMG-20191025-WA0085.jpg') }}"/>
+                                <img src="{{ asset('assets/img/equipes/vsss/_DSC5981.JPG') }}"/>
                             </div>
                             <div class="text">
                                 <h2>VSSS</h2>

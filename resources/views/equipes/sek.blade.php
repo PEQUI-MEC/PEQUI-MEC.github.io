@@ -40,6 +40,9 @@
                     <p> Nunc non tempus quam, non faucibus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
                     -->
                 </div>
+                <div class="texts">
+                    <p><b>Capitã(o) de Equipe:</b> Rafael Caetano - <a href="mailto:rafaelcaetano.eng@gmail.com">rafaelcaetano.eng@gmail.com</a></p>
+                </div>
 
                 <div class="swiper-container">
                     

@@ -31,7 +31,7 @@
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="#">Contato</a>
+					<a class="nav-link" href="#contato">Contato</a>
 				</li>
 
 			</ul>

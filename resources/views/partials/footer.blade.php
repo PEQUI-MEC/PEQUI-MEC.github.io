@@ -21,7 +21,7 @@
     
     </div>
 
-    <div class="main-footer">
+    <div class="main-footer" id="contato">
 
         <div class="container">
     
@@ -31,26 +31,27 @@
 					<div class="footer-logo"><a href="index.html">Pequi</a></div>
 					<p>O movimento que visa estimular o aprendizado de robótica entre estudantes!</p>
 					<ul class="footer-social">
-						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://www.instagram.com/pequimecanico/"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://github.com/PEQUI-MEC"><i class="fab fa-youtube-square"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCDHqVynBVMcktQKgd5xZb1Q"><i class="fab fa-github"></i></a></li>
+						<li><a href="maito:pequimecanicoufg@gmail.com"><i class="fas fa-envelope-square"></i></i></a></li>
 					</ul>
                 </div>
                 
 				<div class="col-12 col-md-4 column-2">
-					<h4>Related Links</h4>
+					
+					<h4>Informações de Contato (E-Mails)</h4>
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<ul class="footer-list">
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Testimonials</a></li>
-								<li><a href="#">Our Team</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="mailto:pequimecanicoufg@gmail.com">Email do Núcleo</a></li>
+								<li><a href="mailto:pequimecanicoufg@gmail.com">Presidente(a): Nabila de Paula e Silva</a></li>
+								<li><a href="mailto:dimitriasilveria.ds@gmail.com">Vice-Presidente(a): Dimitria Silveria</a></li>
+								<li><a href="mailto:anakarolynas27@gmail.com">Diretor(a) de Eventos: Ana Karolyna Piauí</a></li>
+								<li><a href="mailto:pequimecanicoufg@gmail.com">Diretor(a) de Patrocínios: João Pedro Porto</a></li>
 							</ul>
 						</div>
+						<!--
 						<div class="col-md-6">
 							<ul class="footer-list">
 								<li><a href="#">Register</a></li>
@@ -59,7 +60,9 @@
 								<li><a href="#">FAQ</a></li>
 							</ul>
 						</div>
+						-->
 					</div>
+-->
                 </div>
                 
 			</div>
