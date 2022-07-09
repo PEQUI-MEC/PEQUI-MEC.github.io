@@ -17,7 +17,7 @@
 
         <div class="message-wrapper">
             <div class="message-inner container">
-                <div class="title"><a href="http://www.cbrobotica.org/" target="_blank"><h2>CBR 2021</h2></a></div>
+                <div class="title"><a href="http://www.cbrobotica.org/" target="_blank"><h2>CBR 2022</h2></a></div>
                 <div class="text"><p>Contagem de dias para o evento mais esperado do ano!</p></div>
                 <div class="countdown">
                     <!-- <div><h2 id="month">02</h2><p>meses</p></div> -->
