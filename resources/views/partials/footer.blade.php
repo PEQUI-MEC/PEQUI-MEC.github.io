@@ -45,8 +45,8 @@
 						<div class="col-md-12">
 							<ul class="footer-list">
 								<li><a href="mailto:pequimecanicoufg@gmail.com">Email do Núcleo</a></li>
-								<li><a href="mailto:depaulanabila@gmail.com">Presidente(a): Nabila de Paula e Silva</a></li>
-								<li><a href="mailto:dimitriasilveria.ds@gmail.com">Vice-Presidente(a): Dimitria Silveria</a></li>
+								<li><a href="mailto:dimitriasilveria.ds@gmail.com">Presidente(a): Dimitria Silveria</a></li>
+								<li><a href="mailto:depaulanabila@gmail.com">Vice-Presidente(a): Nabila de Paula e Silva</a></li>
 								<li><a href="mailto:anakarolynas27@gmail.com">Diretor(a) de Eventos: Ana Karolyna Piauí</a></li>
 								<li><a href="mailto:joaopedrocporto97@hotmail.com">Diretor(a) de Patrocínios: João Pedro Porto</a></li>
 							</ul>
